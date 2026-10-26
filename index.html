@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="แฟ้มรวบรวมการบ้านและโปรเจกต์ของนายพรรคพล พูลสวัสดิ์">
+<title>Portfolio | พรรคพล พูลสวัสดิ์</title>
+<style>
+:root{
+  --bg:#171b2b;--panel:#22283b;--panel-hover:#282f46;--line:#3b4561;
+  --text:#edf0ff;--muted:#a4adc8;--primary:#b7a5ff;--primary-dark:#7b68d9;
+  --cyan:#55d6d0;--green:#1d9c88;--green-hover:#27b69f;--pink:#f2a4d5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{height:52px;padding:0 22px;background:#131725;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:750;color:var(--text)}
+.topbar .github{font-size:12px;color:var(--cyan)}
+.layout{width:min(100% - 36px,1080px);margin:0 auto;padding:34px 0 46px;display:grid;grid-template-columns:235px minmax(0,1fr);gap:30px;align-items:start;min-height:calc(100vh - 106px)}
+.profile{padding-top:4px}
+.avatar{width:92px;height:92px;display:block;object-fit:cover;object-position:center 30%;border:2px solid #8c7ce8;background:#1b3948;border-radius:50%;margin-bottom:16px}
+h1{font-size:22px;line-height:1.35;margin:0 0 5px;font-weight:750}
+.handle{font-size:15px;color:var(--muted);margin-bottom:12px}
+.bio{margin:0 0 14px;color:var(--text)}
+.button{display:inline-block;border:1px solid var(--green);background:var(--green);color:white;border-radius:6px;padding:7px 12px;font-size:12px;font-weight:700;text-align:center;transition:background .15s ease,border .15s ease}
+.button:hover{background:var(--green-hover);border-color:var(--green-hover);text-decoration:none}
+.profile>.button{display:block;width:100%;margin:13px 0 19px}
+.meta{border-top:1px solid var(--line);padding-top:15px;margin-top:18px}
+.meta-item{display:flex;gap:10px;margin:0 0 13px;color:var(--muted);font-size:12px;align-items:flex-start}
+.meta-icon{width:24px;height:24px;display:flex;align-items:center;justify-content:center;flex:0 0 24px;background:#303650;border-radius:7px;font-size:13px}
+.meta-item strong{display:block;color:var(--text);font-size:13px;font-weight:500}
+main{min-width:0}
+.section-title{font-size:15px;font-weight:750;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center}
+.count{font-size:11px;background:#343b55;color:#d8ddf5;padding:1px 7px;border-radius:20px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px;display:flex;flex-direction:column;min-height:158px;transition:background .15s ease,border-color .15s ease}
+.card:hover{background:var(--panel-hover);border-color:#625e94}
+.card h2{font-size:13px;line-height:1.55;margin:0 0 8px;color:var(--primary);font-weight:750}
+.badge{float:right;border:1px solid #5b6480;border-radius:12px;color:#c1c9e2;font-size:10px;padding:1px 7px;margin-left:8px;font-weight:500;white-space:nowrap}
+.card p{color:var(--muted);font-size:11px;line-height:1.7;margin:0 0 13px}
+.card-bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}
+.tags{display:flex;gap:9px;flex-wrap:wrap;color:var(--muted);font-size:10px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--cyan);margin-right:5px}
+.dot.colab{background:#f69c61}.dot.canva{background:#a78bfa}.dot.web{background:#55d6d0}.dot.graph{background:#8fb8ff}.dot.pdf{background:var(--pink)}
+.links{display:flex;gap:6px;flex-wrap:wrap}
+.btn-secondary{display:inline-block;color:#d4dbf4;border:1px solid #535d7b;background:#2a3046;border-radius:6px;padding:5px 9px;font-size:11px}
+.btn-secondary:hover{background:#353d58;text-decoration:none}
+.final{grid-column:1/-1;min-height:138px;border-color:#4f5d79;background:linear-gradient(120deg,#252b40,#202e3c)}
+.note{font-size:11px;color:var(--muted);margin-top:14px}
+.footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);padding:20px 12px;font-size:11px}
+@media(max-width:720px){.layout{grid-template-columns:1fr;gap:28px;padding-top:24px}.profile{max-width:none}.avatar{width:70px;height:70px;border-radius:50%;float:left;margin:0 13px 12px 0}.profile:after{content:"";display:block;clear:both}.profile>.button{max-width:280px}.meta{clear:both}.cards{grid-template-columns:1fr}.final{grid-column:auto}.topbar{padding:0 14px}.layout{width:calc(100% - 28px)}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#">📁 Portfolio</a>
+  <a class="github" href="https://github.com/Pakkarpon/DB_023" target="_blank" rel="noopener noreferrer">github.com/Pakkarpon ↗</a>
+</header>
+<div class="layout">
+  <aside class="profile">
+    <img class="avatar" src="Top1.jpg" alt="รูปโปรไฟล์ของนายพรรคพล พูลสวัสดิ์">
+    <h1>นายพรรคพล พูลสวัสดิ์</h1>
+    <div class="handle">664245023</div>
+    <p class="bio">เว็บรวบรวมผลงานที่ส่งอาจารย์<br>โปรเจกต์ระบบแนะนำขนม</p>
+    <a class="button" href="https://github.com/Pakkarpon/DB_023" target="_blank" rel="noopener noreferrer">ดูโปรไฟล์ GitHub ↗</a>
+    <div class="meta">
+      <p class="meta-item"><span class="meta-icon">🪪</span><span>รหัสนักศึกษา<strong>664245023</strong></span></p>
+      <p class="meta-item"><span class="meta-icon">👥</span><span>ห้อง<strong>66/43</strong></span></p>
+      <p class="meta-item"><span class="meta-icon">🏫</span><span>คณะ<strong>วิทยาศาสตร์และเทคโนโลยี</strong></span></p>
+      <p class="meta-item"><span class="meta-icon">💻</span><span>สาขา<strong>วิทยาการคอมพิวเตอร์</strong></span></p>
+    </div>
+  </aside>
+
+  <main>
+    <h2 class="section-title">🗂️ ผลงาน <span class="count">4</span></h2>
+    <div class="cards">
+      <article class="card">
+        <h2>🟦 งานที่ 1 - ระบบแนะนำเบื้องต้น (DessertRecommender) <span class="badge">Notebook</span></h2>
+        <p>แบบฝึกหัดสร้างระบบแนะนำขนมเบื้องต้นด้วย Google Colab เพื่อทดลองแนวคิดการแนะนำรายการขนม</p>
+        <div class="card-bottom">
+          <div class="tags"><span><i class="dot colab"></i>Jupyter Notebook</span><span><i class="dot"></i>Recommendation</span></div>
+          <div class="links"><a class="button" href="https://colab.research.google.com/drive/1psVQIujQ0JD0iQekz-8qHTas4n-Dp3Vz?usp=sharing_open" target="_blank" rel="noopener noreferrer">เปิดใน Colab ↗</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>🟦 งานที่ 2 - วิเคราะห์ข้อมูลกราฟ (Graph Analysis) <span class="badge">Notebook</span></h2>
+        <p>แบบฝึกหัด Graph Analysis ด้วย Neo4j DB Online เพื่อสำรวจข้อมูลและความสัมพันธ์ในฐานข้อมูลกราฟ</p>
+        <div class="card-bottom">
+          <div class="tags"><span><i class="dot colab"></i>Jupyter Notebook</span><span><i class="dot graph"></i>Neo4j</span></div>
+          <div class="links"><a class="button" href="https://colab.research.google.com/drive/1sAQqauHYCRtjK1jVGrsGJd0Wky-hiM8B?usp=sharing_open" target="_blank" rel="noopener noreferrer">เปิดใน Colab ↗</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>📝 งานที่ 3 - แบบฝึกหัดตอบคำถาม <span class="badge">Canva</span></h2>
+        <p>เอกสารสำหรับตอบคำถามและสรุปแบบฝึกหัดประกอบการเรียน สามารถเปิดดูรายละเอียดได้จาก Canva</p>
+        <div class="card-bottom">
+          <div class="tags"><span><i class="dot canva"></i>Canva</span><span><i class="dot pdf"></i>แบบฝึกหัด</span></div>
+          <div class="links"><a class="button" href="https://www.canva.com/design/DAHW3JoP1dI/4rJHdN_W6CZFjAGU4JswsQ/edit" target="_blank" rel="noopener noreferrer">เปิดใน Canva ↗</a></div>
+        </div>
+      </article>
+
+      <article class="card final">
+        <h2>🎯 งาน Final - ระบบแนะนำขนม (Dessert Recommendation System) <span class="badge">Final</span></h2>
+        <p>เว็บแอประบบแนะนำขนมโดยใช้แนวคิด Graph Database (Neo4j) และ Streamlit เพื่อแสดงผลการแนะนำ พร้อมเอกสารนำเสนอโปรเจกต์ใน Canva</p>
+        <div class="card-bottom">
+          <div class="tags"><span><i class="dot"></i>Python</span><span><i class="dot web"></i>Streamlit</span><span><i class="dot graph"></i>Neo4j</span><span><i class="dot canva"></i>Canva</span></div>
+          <div class="links">
+            <a class="button" href="https://22apezkshfcnklimdursax.streamlit.app/" target="_blank" rel="noopener noreferrer">เปิดเว็บระบบ ↗</a>
+            <a class="btn-secondary" href="https://www.canva.com/design/DAHW3P1_2fs/dIZ9ijT4Ac_lXyOeKFSCPQ/edit" target="_blank" rel="noopener noreferrer">เปิดสไลด์นำเสนอ ↗</a>
+            <a class="btn-secondary" href="https://github.com/Pakkarpon/DB_023" target="_blank" rel="noopener noreferrer">ดู GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+</div>
+<footer class="footer">© 2026 นายพรรคพล พูลสวัสดิ์ · 664245023</footer>
+</body>
+</html>
